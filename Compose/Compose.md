@@ -6,3 +6,4 @@
 - **LaunchedEffect** *vs* **SideEffect**
 - **LazyColumn**, **LazyRow** *vs* **RecyclerView**
 - Calling Composable from Composable function
+- What is *rememberCoroutineScope()*
