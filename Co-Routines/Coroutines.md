@@ -14,3 +14,9 @@
 - What is **withContext()**
 - Major difference between Job & Supervisor Job
 - How to make call to multiple functions *parallelly*?
+
+# *Snippet*
+
+**Predict the output**
+
+<img width="328" alt="image" src="https://github.com/vishpraveen/AndroidInterview/assets/14356494/83f6c886-fd9a-42ac-b7b7-59f17e9bcfef">
