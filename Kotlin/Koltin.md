@@ -37,4 +37,22 @@ fun main() {
     println(resultFloat)
 }
 ```
+- **Scope Functions** in Kotlin
+    > In Kotlin, scope functions are a set of functions that allow you to execute a block of code within the context of an object. They provide a concise way to work with objects, without having to use explicit references to them. The most commonly used scope functions are
+    - `let`
+    - `run`
+    - `with`
+    - `apply`
+    - `also`
+    > Each of these functions has specific use cases and behaviors. They differ primarily in how they handle the context object (`this` or `it`) and what they return.
+    
+    | Function | Context Object | Return Value  | Use Case                                            |
+    | :------: | :------------: | :------------ | :-------------------------------------------------- |
+    |  `also`  |      `it`      | Object itself | `Perform side-effects without altering the object.` |
+    | `apply`  |     `this`     | Object itself | `Initialize or configure an object in a chain.`     |
+    |  `let`   |      `it`      | Lambda result | `Perform operations and transformations.`           |
+    |  `run`   |     `this`     | Lambda result | `Initialize or configure an object.`                |
+    |  `with`  |     `this`     | Lambda result | `Operate on an object without repeating its name.`  |
+    
+    
 
