@@ -2,7 +2,7 @@
 
 - **Structuring** *&* **Destructuring**
 - Difference between **"in"**, **"..."**, **"until"** in *Collections*
-- **data class** vs **Class** in Koltin
+- **data class** vs **Class** in Kotlin
 - Properties of data class
   - equals(), hashCode(), toString(), copy()
 - **var** *vs* **val** *vs* **const**
@@ -10,7 +10,7 @@
 - **Access Modifiers**
 - **Object** *vs* **Companion Object**
 - **Fragment Pager Lifecycle**
-- Types of **Constructors** in koltin
+- Types of **Constructors** in Kotlin
 - **Primary** *vs* **Secondary** *vs* **init block**
 - **init block**
 - **Singleton** in *Kotlin*
