@@ -21,6 +21,12 @@
 - What is `supervisorScope`?
 - What is `Job` in coroutine?
 - Difference between `Continuation<T>` vs `CancellableContinuation<T>` in coroutine?
+- What are Kotlin Coroutines, and how do they differ from traditional threading mechanisms in Android?
+- What is `structured concurrency`, and how do coroutines support it?
+- Explain the concept of suspending functions in coroutines.
+- Explain the difference between async and launch in coroutines.
+- What is the purpose of the `withContext` coroutine builder?
+- Explain the use of Flow in coroutines for asynchronous data streams.
 
 # *Snippet*
 
