@@ -20,7 +20,7 @@
 - Infix function
 - Higher order function
   - Write a HOF to add two Float numbers 2.3 & 4.5
-```
+```Kotlin
 fun addTwoFloatNumber(a: Float, b: Float, calculation: (Float, Float) -> Float): Float {
     return calculation(a, b)
 }
