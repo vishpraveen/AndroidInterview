@@ -1,8 +1,8 @@
 # **Arrays and Strings**
 **Easy**
-- Find the missing number in an array of 1 to N. [solution]([https://](https://github.com/vishpraveen/DesignPattern/blob/master/src/dsa/array/FindMissingNumber.java))
-- Implement a function to reverse a string. [solution]([https://](https://github.com/vishpraveen/DesignPattern/blob/master/src/dsa/array/ReverseAString.java))
-- Check if a string is a palindrome. [sloution]([https://](https://github.com/vishpraveen/DesignPattern/blob/master/src/dsa/array/PalindromeString.java))
+- Find the missing number in an array of 1 to N. [solution]([https://github.com/vishpraveen/DesignPattern/blob/master/src/dsa/array/FindMissingNumber.java])
+- Implement a function to reverse a string. [solution]([https://github.com/vishpraveen/DesignPattern/blob/master/src/dsa/array/ReverseAString.java])
+- Check if a string is a palindrome. [sloution]([https://github.com/vishpraveen/DesignPattern/blob/master/src/dsa/array/PalindromeString.java])
 - Merge two sorted arrays.
 
 **Medium**
