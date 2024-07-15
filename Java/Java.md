@@ -20,6 +20,7 @@
 - Explain the difference between a **constructor** and a **method**.
 - What are the main differences between **ArrayList** and **LinkedList**?
 - How does **garbage** collection work in Java?
+- Explain the concept of **Serialization** and **De-Serialization** in Java
   
 # *Intermediate Java Interview Questions*
 - What are the main differences between an **interface** and an **abstract class**?
@@ -102,7 +103,7 @@
 
 # **Solutions**
 
-# Difference between Checked vs Unchecked Exception [GFG]([https://](https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/))
+# Difference between Checked vs Unchecked Exception [GFG]([https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/])
 
 # Difference between *"=="* *vs* *"equals()"*
 In Java, both `==` and `equals()` are used for comparisons, but they serve different purposes:
