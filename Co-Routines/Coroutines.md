@@ -1,7 +1,7 @@
 # *Coroutines*
 
 - What is *Coroutines*?
-  - Why coroutine is called light weight thread?
+  - Why coroutine is called lightweight thread?
 - What is **Global** Scope?
 - What is **Coroutine Context**?
 - What are types of **Scopes** in Coroutine?
@@ -14,8 +14,8 @@
 - How to switch from Dispatcher.IO to Dispatcher.Main?
 - What is **withContext()**
 - Major difference between Job & Supervisor Job
-- How to make call to multiple functions *parallelly*?
-- How to convert tradetional `Callback` to `Coroutine`?
+- How to make call to multiple functions *parallel*?
+- How to convert traditional `Callback` to `Coroutine`?
 - What is `suspendCoroutine`?
 - What is `suspendCancellableCoroutine`?
 - What is `supervisorScope`?
