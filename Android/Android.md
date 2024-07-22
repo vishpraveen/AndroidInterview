@@ -18,13 +18,19 @@
 - **Types if *Persistent Data Stores* Eg: *SharedPref / Room / DataStore* in Android**
 - **What is *join* in Room?**
 - What is *Save State Instance*?
+- Difference between **Serializable** & **Parcelable** in Android?
+- What is _**bound service**_ in Android?
+- What is an **Intent Service** and how it is used in Android?
+- What is Broadcast Receivers and its types? 
+- - What is _**bound service**_ in Android? How it differs from a **Started Service**?
 
 # *View Model*
 - How ViewModel is lifecycle aware component? How does VM works internally which makes it lifecycle aware?
 - LiveData **setValue** vs **postValue**
 - What will happen if we use setValue on BG thread?
 
-# *Work Manager*
+# *Work Manager*/
+- What is Work Manager
 - On which thread does work manager work by default?
 - How many workers exist in work manager?
 

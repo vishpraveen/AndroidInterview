@@ -15,6 +15,7 @@
 - **init block**
 - **Singleton** in *Kotlin*
 - Difference between **"=="** *vs* **"==="** *vs* **"equals()"**
+- What is Sealed class/interface in Kotlin?
 
 - Inline functions
 - Infix function
