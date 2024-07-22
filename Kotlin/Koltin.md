@@ -20,20 +20,22 @@
 - Infix function
 - Higher order function
   - Write a HOF to add two Float numbers 2.3 & 4.5
+
 ```Kotlin
 fun addTwoFloatNumber(a: Float, b: Float, calculation: (Float, Float) -> Float): Float {
     return calculation(a, b)
 }
+
 // Simple addition function
 fun add(x: Float, y: Float): Float {
     return x + y
 }
 
 fun main() {
-    val x= 2.3F
+    val x = 2.3F
     val y = 4.5F
-    val resultFloat = addTwoFloatNumber(x, y, ::add) //function reference
-    val resultFloat = addTwoFloatNumber(x, y, { x, y -> x + y })// Using Lambda
+    val resultFloat1 = addTwoFloatNumber(x, y, ::add) //function reference
+    val resultFloat2 = addTwoFloatNumber(x, y) { a, b -> a + b }// Using Lambda
     println(resultFloat)
 }
 ```
@@ -47,7 +49,7 @@ fun main() {
     > Each of these functions has specific use cases and behaviors. They differ primarily in how they handle the context object (`this` or `it`) and what they return.
     
     | Function | Context Object | Return Value  | Use Case                                            |
-    | :------: | :------------: | :------------ | :-------------------------------------------------- |
+    |:--------:|:--------------:|:--------------|:----------------------------------------------------|
     |  `also`  |      `it`      | Object itself | `Perform side-effects without altering the object.` |
     | `apply`  |     `this`     | Object itself | `Initialize or configure an object in a chain.`     |
     |  `let`   |      `it`      | Lambda result | `Perform operations and transformations.`           |
