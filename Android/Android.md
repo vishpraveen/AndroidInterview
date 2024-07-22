@@ -42,5 +42,12 @@
 - How AAB knows which bundle to install on which device
 
 # *Handler Looper Thread*
-- How do they work?
+- How do they work? [link](https://janisharali.com/blog/android-core-looper-handler-and-handlerthread-bd54d69fe91a)
+
+# What are ThreadPool?
+# Multipart request and OAuth 2.0 in Networking.
+# Detecting and fixing memory leaks.
+# App memory usage and garbage collection.
+# Security
+# Websocket
 
