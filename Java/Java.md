@@ -4,18 +4,18 @@
 - **Abstract** *vs* **Interface**
 - **Local** *vs* **Global** variables
 - *Access Modifiers*
-- Difference between *"=="* *vs* *"equals()"*
-- Difference between **Checked** *vs* **Unchecked** Exception
-- Difference between **throw** *vs* **throws**?
-- What are *multiple* checked blocks?
+- Difference between *"=="* *vs* *"equals()"* [link](#difference-between--vs-equals)
+- Difference between **Checked** *vs* **Unchecked** Exception [link](#difference-between-checked-vs-unchecked-exception-gfg)
+- Difference between **throw** *vs* **throws**? [link](#difference-between-throw-vs-throws)
+- What are *multiple* checked blocks? [link](#what-are-multiple-checked-blocks)
 
 # *Basic Java Interview Questions*
 - What is the difference between **JDK**, **JRE**, and **JVM**?
 - What are the main features of Java?
 - Explain the concept of **OOP** in Java.
 - What is a **Class** and an **Object** in Java?
-- What is the difference between **==** and **equals()** in Java?
-- How does the **final** keyword work in Java?
+- What is the difference between **==** and **equals()** in Java? [link](#difference-between--vs-equals)
+- How does the **final** keyword work in Java? [link](#how-does-the-final-keyword-work-in-java)
 - What is the purpose of the **static** keyword?
 - Explain the difference between a **constructor** and a **method**.
 - What are the main differences between **ArrayList** and **LinkedList**?
@@ -135,7 +135,8 @@ In summary:
 - Use `equals()` for comparing the content of objects (after overriding the method appropriately).
 
 # How does the **final** keyword work in Java?
-In Java, the `final` keyword is a non-access modifier that can be applied to **variables**, **methods**, and **classes**. It serves different purposes depending on where it's used:
+In Java, the `final` keyword is a non-access modifier that can be applied to **variables**, **methods**, and **classes**. It serves different purposes depending
+on where it's used:
 * ##### Final Variables:
   - When applied to a variable, final makes it a `constant`. This means that once the variable is assigned a value, it cannot be changed.
   - This is useful for defining values that should remain constant throughout the program's execution, like mathematical constants (e.g., final double PI = 3.14159;).
