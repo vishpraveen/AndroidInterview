@@ -25,7 +25,7 @@
 # *Intermediate Java Interview Questions*
 - What are the main differences between an **interface** and an **abstract class**?
 - Explain **exception handling** in Java with examples.
-- What is the purpose of the **transient** keyword in Java?
+- What is the purpose of the **transient** keyword in Java? [link](#what-is-the-purpose-of-the-transient-keyword-in-java)
 - How do you **handle thread synchronization** in Java?
 - What are the different types of **inheritance** in Java?
 - Explain the concept of **polymorphism** with examples.
@@ -366,3 +366,21 @@ public class SharedData {
 * **`serialVersionUID`**: Ensures version compatibility.
 * **Transient Fields**: Use for fields that should not be serialized.
 * **Custom Serialization**: Implement `writeObject` and `readObject` for custom behavior.
+
+## What is the purpose of the **transient** keyword in Java?
+>The transient keyword in Java is used to indicate that a particular field of a class should not be serialized when the class instance is being serialized. When an object is serialized, fields marked with transient are excluded from the serialization process, meaning they are not converted into a byte stream and, consequently, are not saved or transmitted as part of the serialized object.
+
+#### Use Cases for `transient`
+1. **Sensitive Information**: If a class contains sensitive information such as passwords, credit card numbers, or other personal data, you can mark these fields as `transient` to ensure they are not serialized and exposed inadvertently.
+2. **Non-Serializable Fields**: Sometimes, a class might contain fields that refer to objects that are not serializable. Marking such fields as `transient` prevents issues during the serialization process.
+3. **Derived Fields**: Fields that can be derived or calculated from other fields do not need to be serialized. Marking them as `transient` can save space and reduce the size of the serialized object.
+4. **Context-Specific Data**: Fields that are only relevant within the context of the current runtime and do not need to be persisted can be marked as `transient`.
+
+`EXAMPLE` After serialization and deserialization, the String field marked with `transient` will be `null` in the deserialized object because they were not part of the serialized data.
+
+#### Summary
+* The `transient` keyword prevents a field from being serialized.
+* It is useful for sensitive information, non-serializable fields, derived fields, and context-specific data.
+* During deserialization, transient fields are initialized to their default values (e.g., `null` for objects, `0` for integers, `false` for booleans).
+
+>Using `transient` helps ensure that only necessary and safe data is persisted and transmitted, enhancing both security and efficiency in Java applications.
