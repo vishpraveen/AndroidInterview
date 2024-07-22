@@ -37,7 +37,7 @@
 # *Advanced Java Interview Questions*
 - What are design patterns? Explain any two design patterns with examples.
 - How does the Java memory model work?
-- What is the difference between **synchronized** and **volatile**?
+- What is the difference between **synchronized** and **volatile**? [link](#difference-between-_synchronized_-and-_volatile_)
 - How does the **ConcurrentHashMap** work?
 - Explain the concept of immutability and how to create an immutable class in Java.
 - What are the differences between a **deep copy** and a **shallow copy**?
@@ -250,3 +250,95 @@ public static void main(String[] args) {
     }
 }
 ```
+
+### Difference between _synchronized_ and _volatile_?
+> In Java, `synchronized` and `volatile` are two key mechanisms for handling concurrency and ensuring thread safety in multithreaded environments. They serve different purposes and are used in different scenarios.
+
+### `synchronized` in Java
+> synchronized is a keyword that provides a way to ensure that only one thread can access a method or block of code at a time. It is used to avoid thread interference and memory consistency errors.
+
+#### Key Points:
+* **Mutex (Mutual Exclusion):** Only one thread can execute a synchronized method or block at a time.
+* **Intrinsic Lock (Monitor Lock):** Each object in Java has an intrinsic lock or monitor. When a thread enters a synchronized block or method, it acquires this lock, and releases it when exiting the block or method.
+* **Preventing Race Conditions:** By controlling access to shared resources, synchronized helps to prevent race conditions where the outcome depends on the sequence or timing of uncontrollable events.
+
+```java
+// synchronized Method  
+public class Counter {
+  private int count = 0;
+
+  // Synchronized method
+  public synchronized void increment() {
+    count++;
+  }
+
+  public int getCount() {
+    return count;
+  }
+}
+```
+```java
+// synchronized Block
+public class Counter {
+    private int count = 0;
+    private final Object lock = new Object();
+
+    // Synchronized block
+    public void increment() {
+        synchronized (lock) {
+            count++;
+        }
+    }
+
+    public int getCount() {
+        return count;
+    }
+}
+```
+#### When to Use `synchronized`:
+* When you need to control access to critical sections of code that modify shared resources.
+* When you need to ensure that a sequence of operations on shared resources is performed atomically.
+
+### `volatile` in Java
+> `volatile` is a keyword used to indicate that a variable's value will be modified by different threads. It ensures visibility of changes to variables across threads.
+
+#### Key Points:
+* **Visibility Guarantee**: Changes to a volatile variable are always visible to other threads. When one thread changes the value of a volatile variable, the new value is immediately visible to other threads.
+* **No Caching**: Variables declared as volatile are not cached locally in a thread’s cache, and are always read from and written to the main memory.
+* **No Atomicity**: Unlike synchronized, volatile does not provide atomicity. It only ensures visibility.
+```java
+public class SharedData {
+    private volatile boolean running = true;
+
+    public void stopRunning() {
+        running = false;
+    }
+
+    public void runTask() {
+        while (running) {
+            // Task running
+        }
+        System.out.println("Task stopped");
+    }
+}
+```
+> In this example, the volatile keyword ensures that the running variable's updated value is visible to all threads.
+
+#### When to Use `volatile`:
+* When you need to ensure that the latest value of a variable is always visible to other threads.
+* When you do not require atomicity, but need to ensure visibility.
+* Suitable for flags and state-check variables where you don't need more complex synchronization.
+
+#### Differences Between `synchronized` and `volatile`
+
+| Feature	  | synchronized                                        | volatile                          |
+|-----------|-----------------------------------------------------|-----------------------------------|
+| Scope     | Methods and code blocks                             | Variables                         |
+| Control   | Ensures mutual exclusion                            | Ensures visibility                |
+| Atomicity | Yes, ensures atomicity                              | No, does not ensure atomicity     |
+| Locking   | Acquires an intrinsic lock (monitor)                | No locking mechanism              |
+| Use Case  | Protects critical sections or complex state changes | Simple flags and state indicators |
+
+#### Summary
+* Use `synchronized` when you need to ensure exclusive access to shared resources or protect critical sections of code.
+* Use `volatile` when you need to ensure visibility of shared variables across threads, and when the variable does not require complex synchronization.
