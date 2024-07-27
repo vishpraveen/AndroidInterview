@@ -1,86 +1,86 @@
 # *Java*
 
-- **OOPs** concepts
-- **Abstract** *vs* **Interface**
+- **OOPs** concepts [link](https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/)
+- **Abstract** *vs* **Interface** [link](https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/)
 - **Local** *vs* **Global** variables
-- *Access Modifiers*
+- *Access Modifiers* [link](https://www.geeksforgeeks.org/access-modifiers-java/)
 - Difference between *"=="* *vs* *"equals()"* [link](#difference-between--vs-equals)
 - Difference between **Checked** *vs* **Unchecked** Exception [link](#difference-between-checked-vs-unchecked-exception-gfg)
 - Difference between **throw** *vs* **throws**? [link](#difference-between-throw-vs-throws)
 - What are *multiple* checked blocks? [link](#what-are-multiple-checked-blocks)
 
 # *Basic Java Interview Questions*
-- What is the difference between **JDK**, **JRE**, and **JVM**?
-- What are the main features of Java?
-- Explain the concept of **OOP** in Java.
-- What is a **Class** and an **Object** in Java?
+- What is the difference between **JDK**, **JRE**, and **JVM**? [link](https://www.geeksforgeeks.org/differences-jdk-jre-jvm/)
+- What are the main features of Java? [link](https://www.geeksforgeeks.org/introduction-to-java/)
+- Explain the concept of **OOP** in Java. [link](https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/)
+- What is a **Class** and an **Object** in Java? [link](https://www.geeksforgeeks.org/classes-objects-java/)
 - What is the difference between **==** and **equals()** in Java? [link](#difference-between--vs-equals)
 - How does the **final** keyword work in Java? [link](#how-does-the-final-keyword-work-in-java)
-- What is the purpose of the **static** keyword?
+- What is the purpose of the **static** keyword? [link](https://www.geeksforgeeks.org/static-keyword-java/)
 - Explain the difference between a **constructor** and a **method**.
 - What are the main differences between **ArrayList** and **LinkedList**?
-- How does **garbage** collection work in Java?
+- How does **garbage** collection work in Java? [link](https://www.geeksforgeeks.org/garbage-collection-java/)
 - Explain the concept of **Serialization** and **De-Serialization** in Java [link](#concept-of-serialization-and-de-serialization-in-java)
   
 # *Intermediate Java Interview Questions*
-- What are the main differences between an **interface** and an **abstract class**?
-- Explain **exception handling** in Java with examples.
+- What are the main differences between an **interface** and an **abstract class**? [link](https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/)
+- Explain **exception handling** in Java with examples. [link](https://www.programiz.com/java-programming/exception-handling)
 - What is the purpose of the **transient** keyword in Java? [link](#what-is-the-purpose-of-the-transient-keyword-in-java)
-- How do you **handle thread synchronization** in Java?
-- What are the different types of **inheritance** in Java?
-- Explain the concept of **polymorphism** with examples.
-- How does the **HashMap** work in Java?
-- What is the difference between **throw** and **throws** in Java?
-- Explain the concept of method **overloading** and **overriding**.
-- What are **generics** in Java and how do they work?
+- How do you **handle thread synchronization** in Java? [link](https://www.geeksforgeeks.org/synchronization-in-java/)
+- What are the different types of **inheritance** in Java? [link](https://www.geeksforgeeks.org/inheritance-in-java/)
+- Explain the concept of **polymorphism** with examples. [link](https://www.geeksforgeeks.org/polymorphism-in-java/)
+- How does the **HashMap** work in Java? [link](https://www.geeksforgeeks.org/internal-working-of-hashmap-java/)
+- What is the difference between **throw** and **throws** in Java? [link](https://www.geeksforgeeks.org/difference-between-throw-and-throws-in-java/)
+- Explain the concept of method **overloading** and **overriding**. [link](https://www.geeksforgeeks.org/difference-between-method-overloading-and-method-overriding-in-java/)
+- What are **generics** in Java and how do they work? [link](https://www.geeksforgeeks.org/generics-in-java/)
   
 # *Advanced Java Interview Questions*
 - What are design patterns? Explain any two design patterns with examples.
-- How does the Java memory model work?
+- How does the Java memory model work? [link](https://www.digitalocean.com/community/tutorials/java-jvm-memory-model-memory-management-in-java)
 - What is the difference between **synchronized** and **volatile**? [link](#difference-between-_synchronized_-and-_volatile_)
-- How does the **ConcurrentHashMap** work?
-- Explain the concept of immutability and how to create an immutable class in Java.
-- What are the differences between a **deep copy** and a **shallow copy**?
-- How do you implement a thread-safe singleton in Java?
-- Explain the concept of **reflection** in Java and its use cases.
-- What are the differences between **Callable** and **Runnable**?
-- How does the **Java Stream API** work?
+- How does the **ConcurrentHashMap** work? [link](https://www.geeksforgeeks.org/concurrenthashmap-in-java/)
+- Explain the concept of immutability and how to create an immutable class in Java. [link](https://www.geeksforgeeks.org/create-immutable-class-java/)
+- What are the differences between a **deep copy** and a **shallow copy**? [link](https://www.geeksforgeeks.org/difference-between-shallow-and-deep-copy-of-a-class/)
+- How do you implement a thread-safe singleton in Java? [link](https://www.geeksforgeeks.org/java-singleton-design-pattern-practices-examples/)
+- Explain the concept of **reflection** in Java and its use cases. [link](https://www.geeksforgeeks.org/reflection-in-java/)
+- What are the differences between **Callable** and **Runnable**? [link](https://www.geeksforgeeks.org/difference-between-callable-and-runnable-in-java/)
+- How does the **Java Stream API** work? [link](https://www.geeksforgeeks.org/stream-in-java/)
   
 # *Concurrency and Multithreading Questions*
-- What is the difference between **Thread** and **Runnable** in Java?
-- Explain the *lifecycle of a thread* in Java.
-- What are the differences between **wait()**, **notify()**, and **notifyAll()**?
-- How do you create a thread pool in Java?
-- What are **deadlock**, **livelock**, and **starvation**?
-- Explain the **ReentrantLock** class and its usage.
-- What is a **CountDownLatch** and how is it used?
-- What are the differences between **Executor** and **ExecutorService**?
-- How does **Future** and **CompletableFuture** work?
-- Explain the concept of the *Fork/Join framework*.
+- What is the difference between **Thread** and **Runnable** in Java? [link](https://www.geeksforgeeks.org/implement-runnable-vs-extend-thread-in-java/)
+- Explain the *lifecycle of a thread* in Java. [link](https://www.geeksforgeeks.org/lifecycle-and-states-of-a-thread-in-java/)
+- What are the differences between **wait()**, **notify()**, and **notifyAll()**? [wait_vs_notify](https://www.geeksforgeeks.org/difference-between-wait-and-notify-in-java/) | [notify_vs_notifyall](https://www.geeksforgeeks.org/difference-between-notify-and-notifyall-in-java/) | [wait_vs_notifyall](https://www.geeksforgeeks.org/difference-between-wait-and-notifyall-in-java/) 
+- How do you create a thread pool in Java? [link](https://www.geeksforgeeks.org/thread-pools-java/)
+- What are **deadlock**, **livelock**, and **starvation**? [link](https://www.geeksforgeeks.org/deadlock-starvation-and-livelock/)
+- Explain the **ReentrantLock** class and its usage. [link](https://www.geeksforgeeks.org/reentrant-lock-java/)
+- What is a **CountDownLatch** and how is it used? [link](https://www.geeksforgeeks.org/countdownlatch-in-java/)
+- What are the differences between **Executor** and **ExecutorService**? [link](https://www.javasavvy.com/difference-between-executor-and-executorservice/)
+- How does **Future** and **CompletableFuture** work? [link](https://stackoverflow.com/questions/35329845/difference-between-completablefuture-future-and-rxjavas-observable)
+- Explain the concept of the *Fork/Join framework*. [link](https://www.geeksforgeeks.org/difference-between-fork-join-framework-and-executorservice-in-java/)
   
 # *Java 8 and Beyond Questions*
-- What are the *main features introduced in Java 8*?
-- How do **lambda** expressions work in Java?
-- What are **functional interfaces**? Provide examples.
-- Explain the *Stream API and its benefits*.
-- How do you use the *Optional class* in Java 8?
-- What is the difference between **map()** and **flatMap()** in Java Streams?
-- Explain **method references** and their use cases.
-- What are **default methods in interfaces**?
-- How does the **java.time** package work for date and time handling?
-- What is a **CompletableFuture** and how is it used?
+- What are the *main features introduced in Java 8*? [link](https://www.geeksforgeeks.org/java-8-features/)
+- How do **lambda** expressions work in Java? [link](https://www.geeksforgeeks.org/lambda-expressions-java-8/)
+- What are **functional interfaces**? Provide examples. [link](https://www.geeksforgeeks.org/functional-interfaces-java/)
+- Explain the *Stream API and its benefits*. [link](https://www.geeksforgeeks.org/stream-in-java/)
+- How do you use the *Optional class* in Java 8? [link](https://www.geeksforgeeks.org/java-8-optional-class/)
+- What is the difference between **map()** and **flatMap()** in Java Streams? [link](https://www.geeksforgeeks.org/difference-between-map-and-flatmap-in-java-stream/)
+- Explain **method references** and their use cases. [link](https://www.geeksforgeeks.org/method-references-in-java-with-examples/)
+- What are **default methods in interfaces**? [link](https://www.geeksforgeeks.org/default-methods-java/)
+- How does the **java.time** package work for date and time handling? [link1](https://www.baeldung.com/java-8-date-time-intro) [link2](https://www.geeksforgeeks.org/new-date-time-api-java8/)
+- What is a **CompletableFuture** and how is it used? [link](https://www.geeksforgeeks.org/completablefuture-in-java/)
   
 # *Java Collections Framework Questions*
-- What are the main differences between **ArrayList** and **Vector**?
-- Explain the difference between **HashSet** and **TreeSet**.
-- How does a *HashMap handle collisions*?
-- What are **Comparable** and **Comparator** interfaces in Java?
-- What is the difference between **HashMap** and **Hashtable**?
-- How do you sort a List in Java?
-- Explain the concept of **fail-fast** and **fail-safe** iterators.
-- How does the **LinkedHashMap** work?
-- What is a **PriorityQueue** and how does it work?
-- Explain the **difference between *ArrayDeque* and LinkedList as a Deque**.
+- What are the main differences between **ArrayList** and **Vector**? [link](https://www.geeksforgeeks.org/vector-vs-arraylist-java/)
+- Explain the difference between **HashSet** and **TreeSet**. [link](https://stackoverflow.com/questions/25602382/java-hashset-vs-treeset-when-should-i-use-over-the-other)
+- How does a *HashMap handle collisions*? [link1](https://www.baeldung.com/java-hashmap-advanced) [link2](https://www.geeksforgeeks.org/how-to-handle-collisions-when-using-a-custom-hash-function-in-a-hashmap/)
+- What are **Comparable** and **Comparator** interfaces in Java? [link](https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/)
+- What is the difference between **HashMap** and **Hashtable**? [link](https://www.geeksforgeeks.org/differences-between-hashmap-and-hashtable-in-java/)
+- How do you sort a List in Java? [link](https://www.digitalocean.com/community/tutorials/java-sort-list)
+- Explain the concept of **fail-fast** and **fail-safe** iterators. [link](https://www.geeksforgeeks.org/fail-fast-fail-safe-iterators-java/)
+- How does the **LinkedHashMap** work? [link](https://www.geeksforgeeks.org/linkedhashmap-class-in-java/)
+- What is a **PriorityQueue** and how does it work? [link](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
+  - Explain the **difference between *ArrayDeque* and LinkedList as a Deque**. [ArrayDeque](https://www.geeksforgeeks.org/arraydeque-in-java/) [LinkedListDeque](https://www.geeksforgeeks.org/implementation-deque-using-doubly-linked-list/)
   
 # *Java Programming Challenges*
 - Write a Java program to reverse a string without using built-in methods.
